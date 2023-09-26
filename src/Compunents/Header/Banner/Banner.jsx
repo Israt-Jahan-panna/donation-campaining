@@ -9,7 +9,7 @@ const Banner = () => {
     <div className="max-w">
       <h1 className="mb-5 text-5xl font-bold text-black">I Grow By Helping People In Needre</h1>
       <input type="text" placeholder="Search" className="input w-36 md:w-auto rounded-[8px, 0px, 0px, 8px]"></input>
-      <button className="p-3 rounded-lg bg-[#FF444A]">Search</button>
+      <button className="p-4 rounded-lg bg-[#FF444A]">Search</button>
     </div>
   </div>
 </div>

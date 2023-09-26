@@ -1,7 +1,7 @@
 import React from "react";
 
 const DonationCard = ({ donation }) => {
-  const { id, category_bg, card_bg, text_color, button_bg, title, category ,picture} =
+  const { id, category_bg, card_bg, text_color, button_bg, title, category ,image} =
     donation || {};
   const categoryBg = {
     backgroundColor: category_bg,
@@ -16,24 +16,24 @@ const DonationCard = ({ donation }) => {
   }
   return (
     <div>
-      <div className="relative flex w-80 flex-col rounded-xlshadow-md">
-        <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl">
+      <div className="relative flex  flex-col rounded-xl shadow-md mr-4 mb-4" style={categoryBg}>
+        <div className="relative  overflow-hidden ">
        
-        <img src={picture} alt="" className="h-full w-full object-cover"/>
+        <img src={image} alt="" className="h-full w-full object-cover"/>
             
         
         </div>
-        <div className="p-6">
+        <div className="p-4">
           <div className="mb-2 flex items-center justify-between ">
             <p
               style={categoryStyle}
-              className="block font-sans text-base font-medium   rounded-xl p-4"
+              className="block font-sans text-base font-medium   rounded-md px-2 py-1"
             >
               {category}
             </p>
            
           </div>
-          <p style={textColor} className="block font-sans text-sm font-normal ">
+          <p style={textColor} className="block font-sans text-xl font-semibold ">
             {title}
             
           </p>
