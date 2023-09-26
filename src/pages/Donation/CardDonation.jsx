@@ -1,6 +1,7 @@
 import React from "react";
 
 const CardDonation = ({ donation }) => {
+    // console.log(donation);
   const {
     id,
     price,
@@ -30,7 +31,7 @@ const CardDonation = ({ donation }) => {
   }
 
   const handelViewDetails = () =>{
-    
+
   }
   return (
     <div>

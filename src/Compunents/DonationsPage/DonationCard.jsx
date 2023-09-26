@@ -17,7 +17,7 @@ const DonationCard = ({ donation }) => {
   }
   return (
     <div>
-      <Link to={`/donations/${id}`}>
+      <Link to={`/donationdetails/${id}`}>
       <div className=" flex  flex-col rounded-xl shadow-md mr-4 mb-4 h-64 " style={categoryBg}>
         <div className=" overflow-hidden ">
        
