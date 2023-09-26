@@ -9,7 +9,11 @@ const donations = useLoaderData();
 
     const donation = donations.find((donation)=>donation.id==id)
     console.log(donation)
-    const {title , price , description , category ,image} = donation;
+    const {title , price , description , category ,image ,price_button_bg} = donation;
+
+    const btnBg={
+        backgroundColor: price_button_bg,
+    }
   return (
     <div>
         
@@ -20,20 +24,24 @@ const donations = useLoaderData();
         src={image}
         alt=""
       />
-      <figcaption className="absolute bottom-0 left- w-full   border border-white bg-transparent py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
-        <div>
-          <Link to={`/donations/${id}`}>
-          <button  className="h-9  " >
-            Donation $ {price}
-          </button>
-          </Link>
-        </div>
-        
+      <figcaption className="absolute bottom-0 left- w-full   border border-white bg-black opacity-25 py-16 px-6 shadow-lg ">
+       
       </figcaption>
     </figure>
+    <div>
+          <Link to={`/donations/${id}`}>
+          <button 
+             style={btnBg}  className="flex s rounded-lg py-3 px-4  font-sans text-lg font-bold text-white  absolute left-[480px] -bottom-5"
+              type="button"
+            >
+             Donate ${price}
+              
+            </button>
+          </Link>
+        </div>
     <div className="mt-16">
         <h1 className="font-bold text-4xl"> {title}</h1>
-        <p className="text-base mt-6 mb-28"> {description}</p>
+        <p className="text-2xl mt-6 mb-28"> {description}</p>
     </div>
        
     </div>
