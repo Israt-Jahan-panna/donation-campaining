@@ -8,3 +8,24 @@ https://i.ibb.co/b6NT0QC/Health.png
 https://i.ibb.co/LzcN5KD/Education.png
 https://i.ibb.co/y8PBtcj/Clothing.png
 https://i.ibb.co/2yCDV2w/Food.png
+
+
+
+
+https://i.ibb.co/3sM0937/3828537.jpg
+
+
+
+const categoryBg = {
+    backgroundColor: category_bg,
+  };
+  const buttonBg = {
+    backgroundColor: text_color,
+  };
+  const textColor = {
+    color: text_color,
+  };
+  const categoryStyle = {
+    ...categoryBg,
+    ...textColor,
+  };

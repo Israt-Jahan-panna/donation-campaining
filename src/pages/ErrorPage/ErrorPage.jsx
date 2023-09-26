@@ -1,8 +1,8 @@
 
 const ErrorPage = () => {
     return (
-        <div className='h-screen flex justify-center items-center'>
-            <h2>This page is not difend go back</h2>
+        <div className='mx-auto w-2/4  flex justify-center items-center'>
+            <img src="https://i.ibb.co/3sM0937/3828537.jpg" alt="" />
         </div>
     );
 };

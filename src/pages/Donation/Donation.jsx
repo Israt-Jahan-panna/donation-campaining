@@ -15,7 +15,7 @@ const Donation = () => {
     return (
         <div>
             <CardDonation donation={donation}></CardDonation>
-            <DonationDetails donation={donation}></DonationDetails>
+            {/* <DonationDetails donation={donation}></DonationDetails> */}
         </div>
     );
 };
