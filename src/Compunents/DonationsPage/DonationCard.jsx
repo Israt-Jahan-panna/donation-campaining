@@ -16,8 +16,8 @@ const DonationCard = ({ donation }) => {
   }
   return (
     <div>
-      <div className="relative flex  flex-col rounded-xl shadow-md mr-4 mb-4" style={categoryBg}>
-        <div className="relative  overflow-hidden ">
+      <div className=" flex  flex-col rounded-xl shadow-md mr-4 mb-4 h-64 " style={categoryBg}>
+        <div className=" overflow-hidden ">
        
         <img src={image} alt="" className="h-full w-full object-cover"/>
             
@@ -33,7 +33,7 @@ const DonationCard = ({ donation }) => {
             </p>
            
           </div>
-          <p style={textColor} className="block font-sans text-xl font-semibold ">
+          <p style={textColor} className="font-sans text-base font-semibold ">
             {title}
             
           </p>
