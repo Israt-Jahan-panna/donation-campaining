@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DonationCard = ({ donation }) => {
   const { id, category_bg, card_bg, text_color, button_bg, title, category ,image} =
@@ -16,6 +17,7 @@ const DonationCard = ({ donation }) => {
   }
   return (
     <div>
+      <Link to={`/donations/${id}`}>
       <div className=" flex  flex-col rounded-xl shadow-md mr-4 mb-4 h-64 " style={categoryBg}>
         <div className=" overflow-hidden ">
        
@@ -38,15 +40,8 @@ const DonationCard = ({ donation }) => {
             
           </p>
         </div>
-        {/* <div className="p-6 pt-0">
-          <button
-            className="block w-full select-none rounded-lg  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-          >
-            Favorite
-          </button>
-        </div> */}
       </div>
+      </Link>
     </div>
   );
 };
