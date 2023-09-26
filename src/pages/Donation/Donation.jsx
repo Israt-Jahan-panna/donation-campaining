@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import CardDonation from './CardDonation';
 
 
 const Donation = () => {
@@ -8,11 +9,11 @@ const Donation = () => {
     const donations = useLoaderData();
     useEffect (()=> {
         const findDonation = donations?. find(donation=>donation.id ===id )
-        console.log(findDonation);
+        setDonation(findDonation);
     },[id,donations])
     return (
         <div>
-            <h4>Donation</h4>
+            <CardDonation donation={donation}></CardDonation>
         </div>
     );
 };
