@@ -1,105 +1,159 @@
-{
-    "data": [
-      {
-        "category": "Health",
-        "category_bg": "rgba(0, 82, 255, 0.15)",
-        "card_bg": "#0052FF",
-        "text_color": "#0052FF",
-        "button_bg": "rgba(0, 82, 255, 0.20)",
-        "items": [
-          {
-            "picture": "health_product1.jpg",
-            "title": "Health Product 1",
-            "category": "Supplement",
-            "description": "A healthy supplement for your daily routine.",
-            "price": "$19.99",
-            "price_button_bg": "rgba(0, 82, 255, 0.20)"
-          },
-          {
-            "picture": "health_product2.jpg",
-            "title": "Health Product 2",
-            "category": "Vitamin",
-            "description": "Boost your immunity with our vitamin capsules.",
-            "price": "$14.99",
-            "price_button_bg": "rgba(0, 82, 255, 0.20)"
-          }
-        ]
-      },
-      {
-        "category": "Education",
-        "category_bg": "rgba(255, 68, 74, 0.15)",
-        "card_bg": "#FF444A",
-        "text_color": "#FF444A",
-        "button_bg": "rgba(255, 68, 74, 0.20)",
-        "items": [
-          {
-            "picture": "education_book1.jpg",
-            "title": "Educational Book 1",
-            "category": "Book",
-            "description": "A must-read book for students of all ages.",
-            "price": "$29.99",
-            "price_button_bg": "rgba(255, 68, 74, 0.20)"
-          },
-          {
-            "picture": "education_course1.jpg",
-            "title": "Online Course 1",
-            "category": "Online Course",
-            "description": "Learn from the best with our online course.",
-            "price": "$49.99",
-            "price_button_bg": "rgba(255, 68, 74, 0.20)"
-          }
-        ]
-      },
-      {
-        "category": "Clothing",
-        "category_bg": "rgba(121, 194, 63, 0.15)",
-        "card_bg": "#79C23F",
-        "text_color": "#79C23F",
-        "button_bg": "rgba(121, 194, 63, 0.20)",
-        "items": [
-          {
-            "picture": "clothing_shirt1.jpg",
-            "title": "Stylish Shirt",
-            "category": "Shirt",
-            "description": "Upgrade your wardrobe with our stylish shirt.",
-            "price": "$39.99",
-            "price_button_bg": "rgba(121, 194, 63, 0.20)"
-          },
-          {
-            "picture": "clothing_jeans1.jpg",
-            "title": "Comfortable Jeans",
-            "category": "Jeans",
-            "description": "Experience comfort with our premium jeans.",
-            "price": "$49.99",
-            "price_button_bg": "rgba(121, 194, 63, 0.20)"
-          }
-        ]
-      },
-      {
-        "category": "Food",
-        "category_bg": "rgba(248, 113, 71, 0.15)",
-        "card_bg": "#F87147",
-        "text_color": "#F87147",
-        "button_bg": "rgba(248, 113, 71, 0.20)",
-        "items": [
-          {
-            "picture": "food_snack1.jpg",
-            "title": "Healthy Snack",
-            "category": "Snack",
-            "description": "Enjoy a healthy and delicious snack.",
-            "price": "$5.99",
-            "price_button_bg": "rgba(248, 113, 71, 0.20)"
-          },
-          {
-            "picture": "food_drink1.jpg",
-            "title": "Refreshing Drink",
-            "category": "Drink",
-            "description": "Stay refreshed with our tasty drink.",
-            "price": "$2.99",
-            "price_button_bg": "rgba(248, 113, 71, 0.20)"
-          }
-        ]
-      }
-    ]
+[
+  {
+    "id": "1",
+    "category_bg": "rgba(0, 82, 255, 0.15)",
+    "card_bg": "#0052FF",
+    "text_color": "#0052FF",
+    "button_bg": "rgba(0, 82, 255, 0.20)",
+    "picture": "https://i.ibb.co/dGNMHTM/Rectangle-4284.png",
+    "title": "Health Product 1",
+    "category": "Supplement",
+    "description": "A healthy supplement for your daily routine.",
+    "price": 19.99,
+    "price_button_bg": "rgba(0, 82, 255, 0.20)"
+  },
+  {
+    "id": "2",
+    "category_bg": "rgba(0, 82, 255, 0.15)",
+    "card_bg": "#0052FF",
+    "text_color": "#0052FF",
+    "button_bg": "rgba(0, 82, 255, 0.20)",
+    "picture": "https://i.ibb.co/dGNMHTM/Rectangle-4284.png",
+    "title": "Health Product 1",
+    "category": "Supplement",
+    "description": "A healthy supplement for your daily routine.",
+    "price": 19.99,
+    "price_button_bg": "rgba(0, 82, 255, 0.20)"
+  },
+  {
+    "id": "3",
+    "category": "Health",
+    "category_bg": "rgba(0, 82, 255, 0.15)",
+    "card_bg": "#0052FF",
+    "text_color": "#0052FF",
+    "button_bg": "rgba(0, 82, 255, 0.20)",
+    "picture": "https://i.ibb.co/dGNMHTM/Rectangle-4284.png",
+    "title": "Health Product 2",
+    "description": "Boost your immunity with our vitamin capsules.",
+    "price": "$14.99",
+    "price_button_bg": "rgba(0, 82, 255, 0.20)"
+  },
+
+  {
+    "id": "4",
+    "picture": "https://i.ibb.co/dGNMHTM/Rectangle-4284.png",
+    "title": "Educational Book 1",
+    "description": "A must-read book for students of all ages.",
+    "price": "$29.99",
+    "price_button_bg": "rgba(255, 68, 74, 0.20)",
+    "category": "Education",
+    "category_bg": "rgba(255, 68, 74, 0.15)",
+    "card_bg": "#FF444A",
+    "text_color": "#FF444A",
+    "button_bg": "rgba(255, 68, 74, 0.20)"
+  },
+  {
+    "id": "5",
+    "picture": "education_course1.jpg",
+    "title": "Online Course 1",
+    "category": "Online Course",
+    "description": "Learn from the best with our online course.",
+    "price": "$49.99",
+    "price_button_bg": "rgba(255, 68, 74, 0.20)",
+    "category_bg": "rgba(255, 68, 74, 0.15)",
+    "card_bg": "#FF444A",
+    "text_color": "#FF444A",
+    "button_bg": "rgba(255, 68, 74, 0.20)"
+  },
+  {
+    "id": "6",
+    "picture": "education_course1.jpg",
+    "title": "Online ",
+    "category": "Online Course",
+    "description": "Learn from the best with our online course.",
+    "price": 49.99,
+    "price_button_bg": "rgba(255, 68, 74, 0.20)",
+    "category_bg": "rgba(255, 68, 74, 0.15)",
+    "card_bg": "#FF444A",
+    "text_color": "#FF444A",
+    "button_bg": "rgba(255, 68, 74, 0.20)"
+  },
+  {
+    "id": "7",
+    "picture": "clothing_shirt1.jpg",
+    "title": "Stylish Shirt",
+    "category": "Shirt",
+    "description": "Upgrade your wardrobe with our stylish shirt.",
+    "price": "$39.99",
+    "price_button_bg": "rgba(121, 194, 63, 0.20)",
+    "category_bg": "rgba(121, 194, 63, 0.15)",
+    "card_bg": "#79C23F",
+    "text_color": "#79C23F",
+    "button_bg": "rgba(121, 194, 63, 0.20)"
+  },
+  {
+    "id": "8",
+    "picture": "clothing_jeans1.jpg",
+    "title": "Comfortable Jeans",
+    "category": "Jeans",
+    "description": "Experience comfort with our premium jeans.",
+    "price": "$49.99",
+    "price_button_bg": "rgba(121, 194, 63, 0.20)",
+    "category_bg": "rgba(121, 194, 63, 0.15)",
+    "card_bg": "#79C23F",
+    "text_color": "#79C23F",
+    "button_bg": "rgba(121, 194, 63, 0.20)"
+  },
+  {
+    "id": "9",
+    "picture": "clothing_jeans1.jpg",
+    "title": "Comfortable ",
+    "category": "Jeans",
+    "description": "Experience comfort with our premium jeans.",
+    "price": "$49.99",
+    "price_button_bg": "rgba(121, 194, 63, 0.20)",
+    "category_bg": "rgba(121, 194, 63, 0.15)",
+    "card_bg": "#79C23F",
+    "text_color": "#79C23F",
+    "button_bg": "rgba(121, 194, 63, 0.20)"
+  },
+  {
+    "id": "10",
+    "picture": "food_snack1.jpg",
+    "title": "Healthy Snack",
+    "category": "Snack",
+    "description": "Enjoy a healthy and delicious snack.",
+    "price": "$5.99",
+    "price_button_bg": "rgba(248, 113, 71, 0.20)",
+    "category_bg": "rgba(248, 113, 71, 0.15)",
+    "card_bg": "#F87147",
+    "text_color": "#F87147",
+    "button_bg": "rgba(248, 113, 71, 0.20)"
+  },
+  {
+    "id": "11",
+    "picture": "food_drink1.jpg",
+    "title": "Refreshing Drink",
+    "category": "Drink",
+    "description": "Stay refreshed with our tasty drink.",
+    "price": "$2.99",
+    "price_button_bg": "rgba(248, 113, 71, 0.20)",
+    "category_bg": "rgba(248, 113, 71, 0.15)",
+    "card_bg": "#F87147",
+    "text_color": "#F87147",
+    "button_bg": "rgba(248, 113, 71, 0.20)"
+  },
+  {
+    "id": "12",
+    "picture": "food_drink1.jpg",
+    "title": "Refreshing Drink",
+    "category": "Drink3",
+    "description": "Stay refreshed with our tasty drink.",
+    "price": "$2.99",
+    "price_button_bg": "rgba(248, 113, 71, 0.20)",
+    "category_bg": "rgba(248, 113, 71, 0.15)",
+    "card_bg": "#F87147",
+    "text_color": "#F87147",
+    "button_bg": "rgba(248, 113, 71, 0.20)"
   }
-  
+]
