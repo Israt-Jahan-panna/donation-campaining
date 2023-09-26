@@ -24,14 +24,13 @@ const donations = useLoaderData();
         src={image}
         alt=""
       />
-      <figcaption className="absolute bottom-0 left- w-full   border border-white bg-black opacity-25 py-16 px-6 shadow-lg ">
+      <figcaption className="absolute bottom-[52px] rounded-sm  w-full   border border-white bg-black opacity-25 py-16 px-6 shadow-lg ">
        
       </figcaption>
-    </figure>
-    <div>
+      <div>
           <Link to={`/donations/${id}`}>
           <button 
-             style={btnBg}  className="flex s rounded-lg py-3 px-4  font-sans text-lg font-bold text-white  absolute left-[480px] -bottom-5"
+             style={btnBg}  className="flex s rounded-lg py-3 px-4  font-sans text-lg font-bold text-white relative left-[40px] bottom-[110px]"
               type="button"
             >
              Donate ${price}
@@ -39,6 +38,8 @@ const donations = useLoaderData();
             </button>
           </Link>
         </div>
+    </figure>
+    
     <div className="mt-16">
         <h1 className="font-bold text-4xl"> {title}</h1>
         <p className="text-2xl mt-6 mb-28"> {description}</p>
