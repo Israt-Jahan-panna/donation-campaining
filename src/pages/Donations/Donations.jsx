@@ -4,7 +4,7 @@ import CardDonation from "../Donation/CardDonation";
 const Donations = () => {
   const [donations, setDonation] = useState([]);
   const [noFound, setNoFound] = useState(false);
-
+    const [isShow , setIsShow] =useState(false)
   useEffect(() => {
     const donationItems = JSON.parse(localStorage.getItem("donations"));
 
@@ -22,10 +22,13 @@ const Donations = () => {
       ) : (
         <div>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-                {
-                    donations.map(donation => <CardDonation key={donation.id} donation={donation}></CardDonation>)
+            {
+                   isShow ?  donations.map(donation => <CardDonation key={donation.id} donation={donation}></CardDonation>) :
+
+                   donations.slice(0,4).map(donation => <CardDonation key={donation.id} donation={donation}></CardDonation>)
                 }
             </div>
+            <button onClick={()=>setIsShow(!isShow)} className=" mt-7 py-2 px-3 text-white bg-green-500 rounded-lg mx-auto block ">See All</button>
         </div>
       )}
     </div>
