@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import CardDonation from './CardDonation';
-import DonationDetails from './DonationDetails';
-
 
 const Donation = () => {
     const [donation ,setDonation] = useState();
@@ -15,7 +13,7 @@ const Donation = () => {
     return (
         <div>
             <CardDonation donation={donation}></CardDonation>
-            {/* <DonationDetails donation={donation}></DonationDetails> */}
+            
         </div>
     );
 };

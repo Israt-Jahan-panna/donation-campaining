@@ -31,7 +31,7 @@ const CardDonation = ({ donation }) => {
   }
 
   const handelViewDetails = () =>{
-
+    
   }
   return (
     <div>
