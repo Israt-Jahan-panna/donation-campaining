@@ -18,7 +18,7 @@ const DonationCard = ({ donation }) => {
   return (
     <div>
       <Link to={`/donationdetails/${id}`}>
-      <div className=" flex  flex-col rounded-xl shadow-md mr-4 mb-4 h-64 " style={categoryBg}>
+      <div className=" flex  flex-col rounded-xl shadow-md mr-4 mb-4 lg:h-64 " style={categoryBg}>
         <div className=" overflow-hidden ">
        
         <img src={image} alt="" className="h-full w-full object-cover"/>

@@ -36,7 +36,7 @@ const CardDonation = ({ donation }) => {
   }
   return (
     <div>
-      <div style={categoryBg} className="relative flex w-full max-w-[50rem] h-[50vh] flex-row rounded-md  shadow-md ">
+      <div style={categoryBg} className="relative flex w-full max-w-[50rem] lg:h-[50vh] flex-row rounded-md  shadow-md ">
         <div className="relative m-0   overflow-hidden rounded-xl rounded-r-none">
           <img src={picture_for_page} className="h-full w-full object-cover" />
         </div>
@@ -54,7 +54,7 @@ const CardDonation = ({ donation }) => {
           <Link to={`/donationdetails/${id}`}>
           <a className="inline-block" href="#">
             <button onClick={handelViewDetails}
-             style={buttonBg}  className="flex select-none rounded-lg py-3 px-4  font-sans text-lg font-bold text-white  disabled:shadow-none"
+             style={buttonBg}  className="flex select-none rounded-lg  p-1 lg:py-3 lg:px-4  font-sans lg:text-lg font-bold text-white  disabled:shadow-none"
               type="button"
             >
              View Details

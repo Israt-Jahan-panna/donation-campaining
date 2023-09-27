@@ -84,12 +84,12 @@ const Statistics = () => {
       </div>
        <div className="flex mx-auto justify-center items-center">
        <div className="flex justify-center items-center mr-5">
-        <p className=" text-lg ">Your Donation </p> 
-        <p className="text-[#00C49F] ml-4 w-14  bg-[#00C49F] rounded-2xl  px-10 py-1"> </p>
+        <p className=" text-sm lg:text-lg ">Your Donation </p> 
+        <p className="text-[#00C49F] ml-4 w-4 lg:w-14  bg-[#00C49F] rounded-2xl  px-10 py-1"> </p>
         </div>
         <div className="flex justify-center items-center ">
-        <p className=" text-lg ">Total Donation </p> 
-        <p className="text-[#FF444A] ml-4 w-14  bg-[#FF444A] rounded-2xl  px-10 py-1"> </p>
+        <p className="text-sm lg:text-lg ">Total Donation </p> 
+        <p className="text-[#FF444A] ml-4 w-4 lg:w-14 bg-[#FF444A] rounded-2xl  px-10 py-1"> </p>
         </div>
        </div>
       
