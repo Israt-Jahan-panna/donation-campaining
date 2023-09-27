@@ -1,14 +1,41 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
 import { PieChart, Pie, Cell } from "recharts";
 
 const Statistics = () => {
+  const [donationsData, setDonation] = useState([]);
+  const [noFound, setNoFound] = useState(false);
+ 
+  const {id} =useParams();
+  
+  const donations = useLoaderData();
+  
+      const donation = donations.find((donation)=>donation.id==id)
+      // console.log(donation)
+ 
+  console.log(donations);
+  console.log(donationsData);
+  useEffect(() => {
+    const donationItems = JSON.parse(localStorage.getItem("donations"));
+    if (donationItems) {
+      setDonation(donationItems);
+    } else {
+      setNoFound("No data found no worries please select your donation item  ");
+    }
+  }, []);
+  
+
+
+
+  // piecharts
+
   const data = [
-    { name: "Group A", value: 12 },
-    { name: "Group B", value: 7 },
+    { name: "Donations", value: donations.length },
+    { name: "Donations Data", value: donationsData.length }
   ];
-
-  const COLORS = ["#0088FE", "#00C49F"];
-
+  
+  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+  
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({
     cx,
@@ -17,12 +44,12 @@ const Statistics = () => {
     innerRadius,
     outerRadius,
     percent,
-    index,
+    index
   }) => {
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
     const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
+  
     return (
       <text
         x={x}
@@ -36,27 +63,30 @@ const Statistics = () => {
     );
   };
   return (
-    <div className="mx-auto w-2/3  flex justify-center items-center">
-      <PieChart width={800} height={800}>
-        <Pie
-          data={data}
-          cx={200}
-          cy={200}
-          labelLine={false}
-          label={renderCustomizedLabel}
-          outerRadius={80}
-          fill="#8884d8"
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-      </PieChart>
-      <h3 className=" ">Your Donation</h3>
-      <h3 className=" ">Total Donation</h3>
+    <div >
+      <div>
+      <PieChart width={400} height={400}>
+      <Pie
+        data={data}
+        cx={200}
+        cy={200}
+        labelLine={false}
+        label={renderCustomizedLabel}
+        outerRadius={80}
+        fill="#8884d8"
+        dataKey="value"
+      >
+        {data.map((entry, index) => (
+          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+        ))}
+      </Pie>
+    </PieChart>
+      </div>
+        <p>Your Donation</p>
+        <p>Total Donation</p>
       
     </div>
+    
   );
 };
 

@@ -35,8 +35,6 @@ const donations = useLoaderData();
     }
 
 
-    
-    // localStorage.setItem('key' , JSON.stringify( [{name: "idrat"} ,{age: '33'}]))
   }
       
   return (
