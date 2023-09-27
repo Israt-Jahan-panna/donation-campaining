@@ -34,7 +34,7 @@ const Statistics = () => {
     { name: "Donations Data", value: donationsData.length }
   ];
   
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+  const COLORS = ["#FF444A", "#00C49F"];
   
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({
@@ -63,8 +63,8 @@ const Statistics = () => {
     );
   };
   return (
-    <div >
-      <div>
+    <div className=" mx-auto" >
+      <div className="flex mx-auto justify-center items-center">
       <PieChart width={400} height={400}>
       <Pie
         data={data}
@@ -82,8 +82,16 @@ const Statistics = () => {
       </Pie>
     </PieChart>
       </div>
-        <p>Your Donation</p>
-        <p>Total Donation</p>
+       <div className="flex mx-auto justify-center items-center">
+       <div className="flex justify-center items-center mr-5">
+        <p className=" text-lg ">Your Donation </p> 
+        <p className="text-[#00C49F] ml-4 w-14  bg-[#00C49F] rounded-2xl  px-10 py-1"> </p>
+        </div>
+        <div className="flex justify-center items-center ">
+        <p className=" text-lg ">Total Donation </p> 
+        <p className="text-[#FF444A] ml-4 w-14  bg-[#FF444A] rounded-2xl  px-10 py-1"> </p>
+        </div>
+       </div>
       
     </div>
     
