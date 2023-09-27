@@ -36,7 +36,7 @@ const CardDonation = ({ donation }) => {
   }
   return (
     <div>
-      <div style={categoryBg} className="relative flex w-full max-w-[50rem] lg:h-[50vh] flex-row rounded-md  shadow-md ">
+      <div style={categoryBg} className="relative flex w-full max-w-[40rem] lg:h-[32vh] flex-row rounded-md  shadow-md ">
         <div className="relative m-0   overflow-hidden rounded-xl rounded-r-none">
           <img src={picture_for_page} className="h-full w-full object-cover" />
         </div>
