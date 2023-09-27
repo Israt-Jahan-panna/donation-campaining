@@ -21,7 +21,7 @@ const Donations = () => {
         <p className="h-[80vh] flex justify-center items-center">{noFound}</p>
       ) : (
         <div>
-            <div>
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 {
                     donations.map(donation => <CardDonation key={donation.id} donation={donation}></CardDonation>)
                 }

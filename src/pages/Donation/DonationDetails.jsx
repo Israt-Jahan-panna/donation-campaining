@@ -53,7 +53,7 @@ const donations = useLoaderData();
        
       </figcaption>
       <div>
-          <Link to={`/donations/${id}`}>
+          <Link to={`/donations`}>
           <button 
            onClick={handleDonations}
              style={btnBg}  className="flex s rounded-lg py-3 px-4  font-sans text-lg font-bold text-white relative left-[40px] bottom-[110px]"
