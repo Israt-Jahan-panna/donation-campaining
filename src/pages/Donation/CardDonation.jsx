@@ -44,7 +44,7 @@ const CardDonation = ({ donation }) => {
           <h6 style={categoryStyle} className=" w-24 py-2 px-4 rounded-md mb-4 block font-sans text-base font-semibold ">
             {category}
           </h6>
-          <h4 className="mb-2 block font-sans text-xl w-[15rem] font-semibold  ">
+          <h4 className="mb-2 block font-sans text-xl lg:w-[15rem] font-semibold  ">
             {title}
           </h4>
           <h4 style={textColor} className="mb-4 block font-sans text-2xl font-semibold  ">
