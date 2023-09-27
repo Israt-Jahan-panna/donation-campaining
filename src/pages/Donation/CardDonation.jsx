@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CardDonation = ({ donation }) => {
     // console.log(donation);
@@ -50,6 +51,7 @@ const CardDonation = ({ donation }) => {
             ${price}
           </h4>
           
+          <Link to={`/donationdetails/${id}`}>
           <a className="inline-block" href="#">
             <button onClick={handelViewDetails}
              style={buttonBg}  className="flex select-none rounded-lg py-3 px-4  font-sans text-lg font-bold text-white  disabled:shadow-none"
@@ -59,6 +61,7 @@ const CardDonation = ({ donation }) => {
               
             </button>
           </a>
+          </Link>
         </div>
       </div>
     </div>

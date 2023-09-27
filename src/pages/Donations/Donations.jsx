@@ -28,7 +28,7 @@ const Donations = () => {
                    donations.slice(0,4).map(donation => <CardDonation key={donation.id} donation={donation}></CardDonation>)
                 }
             </div>
-            <button onClick={()=>setIsShow(!isShow)} className=" mt-7 py-2 px-3 text-white bg-green-500 rounded-lg mx-auto block ">See All</button>
+            {donations.length > 4 && <button onClick={()=>setIsShow(!isShow)} className=" mt-7 py-2 px-3 text-white bg-green-500 rounded-lg mx-auto block ">{isShow ? "See less" : "See more"}</button>}
         </div>
       )}
     </div>
